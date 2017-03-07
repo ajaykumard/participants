@@ -3,9 +3,9 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${vcap.services.ocr-eureka.credentials.uri:http://localhost:8761/eureka/}
+      defaultZone: http://myeureka.azurewebsites.net/eureka/
   instance:
-    hostname: ${vcap.application.uris[0]:localhost}
+    hostname: myeureka.azurewebsites.net
     metadataMap:
       instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
       
