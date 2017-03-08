@@ -4,12 +4,6 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://myeureka.azurewebsites.net/eureka/
-  #instance:
-    #hostname: myeureka.azurewebsites.net
-    #metadataMap:
-      #instanceId: ${vcap.application.instance_id:${spring.application.name}:${spring.application.instance_id:${server.port}}}
-      
-      
 ---
 spring:
   profiles: cloud
